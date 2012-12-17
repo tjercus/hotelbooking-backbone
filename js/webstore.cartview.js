@@ -7,7 +7,7 @@ Webstore.CartView = Backbone.View.extend({
 
 	// Overrides
 	initialize: function() {
-		console.log("CartView.renderItem()");
+		console.log("CartView.initialize()");
 		_.bind(this, "modelChanged");
 		
 		// add the right 'this' to be used when the callback is used
