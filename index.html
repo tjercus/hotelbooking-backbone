@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Demo - Backbone</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<link rel="stylesheet" href="css/clear.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" />
+
+		<script src="lib/jquery.min.js"></script>
+		<script src="lib/jquery.tmpl.min.js"></script>
+		<script src="lib/underscore.min.js"></script>
+		<script src="lib/backbone.js"></script>
+		<!-- prod: <script src="lib/all.min.js"></script> -->
+
+		<script id="booking-template" type="text/x-jquery-tmpl">
+			<a href="#" data-id="${id}">${name}</a> for &euro; <em>${price}</em>
+		</script>
+
+		<script id="cart-item-template" type="text/x-jquery-tmpl">
+			<li>${name}</li>
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1>Hotel booking</h1>
+		</header>
+		<article>
+			<h2>Offers</h2>
+
+			<ul id="booking-list"></ul>
+
+			<h2>Your cart</h2>
+
+			<ul id="cart-list"></ul>
+
+			<button>pay</button>
+		</article>
+
+		<script src="js/webstore.booking.js"></script>
+		<script src="js/webstore.bookingcollection.js"></script>
+		<script src="js/webstore.cartcollection.js"></script>
+		<script src="js/webstore.bookinglistview.js"></script>
+		<script src="js/webstore.bookinglistitemview.js"></script>
+		<script src="js/webstore.cartview.js"></script>
+		<script src="js/application.js"></script>
+		<!-- prod: <script src="js/all.min.js"></script> -->
+	</body>
+</html>

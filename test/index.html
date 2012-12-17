@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- 3rd party libs -->
+        <script src="../lib/jquery.min.js"></script>
+		<script src="../lib/jquery.tmpl.min.js"></script>
+		<script src="../lib/underscore.min.js"></script>
+		<script src="../lib/backbone.js"></script>
+
+        <link rel="stylesheet" href="lib/qunit.css" type="text/css" media="screen" />
+        <script src="lib/qunit.js"></script>
+
+		<!-- our libs -->
+        <script src="../js/webstore.booking.js"></script>
+		<script src="../js/webstore.bookingcollection.js"></script>
+		<script src="../js/webstore.cartcollection.js"></script>
+		<script src="../js/webstore.bookinglistview.js"></script>
+		<script src="../js/webstore.bookinglistitemview.js"></script>
+		<script src="../js/webstore.cartview.js"></script>
+
+		<script id="booking-template" type="text/x-jquery-tmpl">
+			<a href="#" data-id="${id}">${name}</a> for &euro; <em>${price}</em>
+		</script>
+
+    </head>
+    <body>
+        <h1 id="qunit-header">QUnit test suite for project Backbone demo</h1>
+        <h2 id="qunit-banner"></h2>
+        <div id="qunit-testrunner-toolbar"></div>
+        <h2 id="qunit-userAgent"></h2>
+        <ol id="qunit-tests"></ol>
+        <div id="qunit-fixture">test markup, will be hidden</div>
+
+		<ul id="booking-list"></ul>
+
+		<!-- our tests -->
+        <script src="webstore.booking.test.js"></script>
+		<script src="webstore.bookinglistview.test.js"></script>
+    </body>
+</html>
