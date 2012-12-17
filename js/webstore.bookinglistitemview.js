@@ -16,8 +16,8 @@ Webstore.BookingListItemView = Backbone.View.extend({
 		this.model.bind("change", this.render, this);
 	},
 
-	clickHandler: function(e){
-		e.preventDefault();
+	clickHandler: function(evt) {
+		evt.preventDefault();
 
 		// jQuery custom event
 		$(document).trigger("booking.selected", this.model);

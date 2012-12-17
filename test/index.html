@@ -9,6 +9,7 @@
 
         <link rel="stylesheet" href="lib/qunit.css" type="text/css" media="screen" />
         <script src="lib/qunit.js"></script>
+        <script src="lib/blanket.js"></script>
 
 		<!-- our libs -->
         <script src="../js/webstore.booking.js"></script>
@@ -18,6 +19,7 @@
 		<script src="../js/webstore.bookinglistitemview.js"></script>
 		<script src="../js/webstore.cartview.js"></script>
 
+		<!-- @todo remove duplicate template shared in index and test/index -->
 		<script id="booking-template" type="text/x-jquery-tmpl">
 			<a href="#" data-id="${id}">${name}</a> for &euro; <em>${price}</em>
 		</script>
@@ -32,9 +34,12 @@
         <div id="qunit-fixture">test markup, will be hidden</div>
 
 		<ul id="booking-list"></ul>
+		
+		<ul id="cart-list"></ul>
 
 		<!-- our tests -->
-        <script src="webstore.booking.test.js"></script>
-		<script src="webstore.bookinglistview.test.js"></script>
+        <script src="webstore.booking.test.js" data-cover></script>
+		<script src="webstore.bookinglistview.test.js" data-cover></script>
+		<script src="webstore.cartview.test.js" data-cover></script>
     </body>
 </html>
