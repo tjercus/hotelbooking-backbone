@@ -8,8 +8,7 @@
 		<script src="../lib/backbone.js"></script>
 
         <link rel="stylesheet" href="lib/qunit.css" type="text/css" media="screen" />
-        <script src="lib/qunit.js"></script>
-        <script src="lib/blanket.js"></script>
+        <script src="lib/qunit.js"></script>       
 
 		<!-- our libs -->
         <script src="../js/webstore.booking.js"></script>
@@ -34,15 +33,15 @@
         <div id="qunit-testrunner-toolbar"></div>
         <h2 id="qunit-userAgent"></h2>
         <ol id="qunit-tests"></ol>
-        <div id="qunit-fixture">test markup, will be hidden</div>
-
-		<ul id="booking-list"></ul>
-		
-		<ul id="cart-list"></ul>
+        <div id="qunit-fixture">
+			<ul id="booking-list"></ul>		
+			<ul id="cart-list"></ul>        
+        </div>       
 
 		<!-- our tests -->
-        <script src="webstore.booking.test.js" data-cover></script>
-		<script src="webstore.bookinglistview.test.js" data-cover></script>
-		<script src="webstore.cartview.test.js" data-cover></script>
+        <script src="webstore.booking.test.js"></script>
+		<script src="webstore.bookinglistview.test.js"></script>
+		<script src="webstore.cartview.test.js"></script>
+		<script src="webstore.cartcollection.test.js"></script>
     </body>
 </html>
